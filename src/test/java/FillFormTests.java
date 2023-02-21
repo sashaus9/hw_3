@@ -30,10 +30,10 @@ public class FillFormTests {
         $(".react-datepicker__month-dropdown-container").$(byText("November")).click();
         $(".react-datepicker__year-dropdown-container").$(byText("1999")).click();
         $(".react-datepicker__month").$(byText("22")).click();
-        $("#subjectsInput").setValue("Donec vel vestibulum neque. Mauris pretium purus nunc, vitae aliquam ex scelerisque quis.ementum libero.");
+        $("#subjectsInput").setValue("Computer Science").pressEnter();
         $("#hobbies-checkbox-2").parent().click();
-//        $("#uploadPicture").uploadFromClasspath("images/photo.jpg");
-        $("#currentAddress").setValue("Aliquam id auctor risus. Sed sit amet venenatis risus, rutrum lobortis erat.");
+        $("#uploadPicture").uploadFromClasspath("images/photo.jpeg");
+        $("#currentAddress").setValue("Aliquam id auctor risus.");
         $("#state").click();
         $("#state").$(byText("NCR")).click();
         $("#city").click();
@@ -46,10 +46,10 @@ public class FillFormTests {
         $(".modal-body").shouldHave(text("Other"));
         $(".modal-body").shouldHave(text("9999999999"));
         $(".modal-body").shouldHave(text("22 November,1999"));
-        $(".modal-body").shouldHave(text("Donec vel vestibulum neque. Mauris pretium purus nunc, vitae aliquam ex scelerisque quis.ementum libero."));
+        $(".modal-body").shouldHave(text("Computer Science"));
         $(".modal-body").shouldHave(text("Reading"));
-        $(".modal-body").shouldHave(text("photo.jpg"));
-        $(".modal-body").shouldHave(text("Aliquam id auctor risus. Sed sit amet venenatis risus, rutrum lobortis erat."));
+        $(".modal-body").shouldHave(text("photo.jpeg"));
+        $(".modal-body").shouldHave(text("Aliquam id auctor risus."));
         $(".modal-body").shouldHave(text("NCR Delhi"));
         $("#closeLargeModal").click();
 
