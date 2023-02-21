@@ -1,0 +1,12 @@
+build/
+.gradle
+.allure
+
+### Idea ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### Logs ###
+*.log
